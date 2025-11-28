@@ -1,0 +1,22 @@
+# Cloned repository
+conformance-suite/
+
+# Maven cache
+m2/
+
+# Docker volumes
+mongo/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
