@@ -22,7 +22,7 @@ fi
 echo "📦 Current commit: $(git rev-parse HEAD)"
 
 echo "🏗️  Running Maven builder..."
-MAVEN_CACHE=./m2 docker-compose -f builder-compose.yml run builder
+MAVEN_CACHE=./m2 docker compose -f builder-compose.yml run builder
 
 echo "🐳 Building Docker images..."
 docker build -t conformance-suite-server:latest .
