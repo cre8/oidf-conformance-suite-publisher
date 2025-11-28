@@ -33,7 +33,7 @@ jobs:
       - name: Run builder and build Docker images
         run: |
           cd conformance-suite
-          MAVEN_CACHE=./m2 docker-compose -f builder-compose.yml run builder
+          MAVEN_CACHE=./m2 docker compose -f builder-compose.yml run builder
           docker compose build
       
       - name: Log in to GitHub Container Registry
